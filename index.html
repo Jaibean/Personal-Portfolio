@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>Jaimie Bertoli</title>
+		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Karla">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+	</head>
+
+<!-- Body -->
+<body class="Background"> 
+
+<!-- Navbar -->
+
+	<div class="Navbar">
+		<a class="active" href="#Home">Home</a>
+		<a href="#About">About</a>
+		<a href="#GitHub">GitHub</a>
+		<a href="#Contact">Contact</a>
+		
+	</div>
+
+<!-- Home -->
+		<br> <!-- Breaks inserted to add space between navbar and first heading -->
+		<br>
+
+<!-- Video -->
+	<div id="Home">
+		<video autoplay muted loop id="Code_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+			<source src="video/video2.mp4" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+		</video>
+	</div>
+
+<!-- Video text --> 
+	<div class="Video_Text"> 
+		<h1 style="color:white; text-shadow: none;">Jaimie's Portfolio</h1>
+			<p> 
+				<strong>
+					<div class="center">
+						"Never let the future disturb you. You will meet it, if you have to,<br> with the same weapons of reason which today arm you against the present."<br>
+						-Marcus Aurelius<br><br>
+						Welcome to my online portfolio. On it, I will tell you about my background and experience.
+						<br>Thank you for stopping by and enjoy! 
+					</div>	
+				</strong>
+			</p> 
+	</div>
+
+<!-- About section -->
+	<div class="Row" id="About"> 
+		<div class="Column_2"> <!-- Left column -->
+			<img src="images/biopic.png" alt="Jaimie">
+		</div>
+  
+		<div class="Column_1"> <!-- Right column -->
+			<h1>About</h1>
+				<p>I am a software developer who loves to create. Traveling and seeing live music are some of my many passions outside of the computer screen. <br><br>I am a graduate of Rowan University Rohr College of Business and <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp. I  am trained and experienced in the following web and programming languages and their popular frameworks: HTML, CSS, JavaScript, SQL, C#, and Python.  <br><br>I am a currently expanding my knowledge on RESTful APIs with Python and am open for work. Check out my <a href="https://docs.google.com/document/d/1ZFFYMlko0nEnacoxpNZ2eKISpURjT2XfFak7qO-dYzQ/edit?usp=sharing" target="_blank">Résumé</a>!</p>
+		</div>
+	</div>
+
+<!-- GitHub section -->
+	<div class="Row" id="GitHub">
+		<div class="Column_1"> <!-- Left column -->
+			<h1>GitHub</h1>
+				<p>You can view my coding projects on my GitHub profile here:<br><br>
+				<a href="https://github.com/Jaibean" target="_blank">Jaimie Bertoli's GitHub</a></p>
+		</div>
+		
+		<div class="Column_2"> <!-- Right column -->
+			<a href="https://github.com/Jaibean" target="_blank"><img src="images/Octocat.png" alt="GitHub_Octocat"></a>
+		</div>
+	</div>
+
+<!-- Contact section -->
+	<div class="Row" id="Contact"> 
+		<div class="Column_3"> <!-- Contact image, left column -->
+			<img src="images/contact.jpg" alt="Contact_Image">
+		</div>
+	
+		<div class="Column_1"> <!-- Contact form, right "column" -->
+			<h1>Contact</h1> 
+				<form action="https://formspree.io/f/xzbypkjq" method="POST" class="form-fonts"> <!-- This specifies where to send the form data and how; it is left blank -->
+					<label >Name:</label>
+						<input type="text" placeholder="Please enter your name here">
+					<label>Email:</label>
+						<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+					<label>Message:</label>
+						<input type="text" id="Message" name="Message" placeholder="Please write your message here">
+						<input type="submit" value="Submit">
+				</form>
+		</div>
+	</div>
+	
+<!-- Footer section -->
+	<footer>
+		<p>
+			<div class="Footer">Check out my <a href="https://www.linkedin.com/in/jaimie-bertoli/" target="_blank" >LinkedIn</a> for professional background</div><br>
+		</p>
+	</footer>
+
+		</body>
+
+</html>
