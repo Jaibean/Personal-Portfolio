@@ -7,11 +7,11 @@
 		<meta charset="UTF-8">
         <title>Jaimie Bertoli</title>
         <!-- Stylesheets-->
-		<link rel="stylesheet" type="text/css" href="css/spashpage.css">
+		    <link rel="stylesheet" type="text/css" href="css/spashpage.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
         <!-- Scripts-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
@@ -19,13 +19,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <!-- Favicon-->
-		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="images/site.webmanifest">
     </head>
     
-<body class="welcome">
+<body class="welcome Background">
   <span id="splash-overlay" class="splash"></span>
   <span id="welcome" class="z-depth-4"></span>
  
@@ -45,47 +45,25 @@
     </nav>
   </header>
 
-  <main class="valign-wrapper">
+  <main id="banner" class="valign-wrapper">
     <span class="container">
 
       <p class="flow-text">Welcome to</p>
       <h1 class="title">Jaimie Bertoli's Portfolio</h1>
 
       <blockquote class="flow-text">Software Developer based in NYC</blockquote>
-
-      <div class="center-align">
-        <!-- Dropdown Trigger -->
-        <a class="btn dropdown-button" href="" data-activates="exams">hse exams<i class="material-icons right">expand_more</i></a>
-
-        <!-- Dropdown Structure -->
-        <ul id="exams" class="dropdown-content">
-          <li><a href="#!">GED&trade; Exam</a></li>
-          <li><a href="#!">HiSET&trade; Exam</a></li>
-          <li><a href="#!">TASC&trade; Exam</a></li>
-        </ul>
-        <!-- Dropdown Trigger -->
-        <a class="btn dropdown-button" href="" data-activates="study">study<i class="material-icons right">expand_more</i></a>
-
-        <!-- Dropdown Structure -->
-        <ul id="study" class="dropdown-content">
-          <li><a href="#!">mathematics</a></li>
-          <li><a href="#!">reading</a></li>
-          <li><a href="#!">science</a></li>
-          <li><a href="#!">social studies</a></li>
-          <li><a href="#!">writing</a></li>
-        </ul>
-      </div>
-
+      <br><br>
+      <a href="#About" class="more scrolly">Learn More</a>
     </span>
+  </main>
 
 <!-- About section 
-<div class="about-section" id="About"> 
+<section class="about-section" id="About"> 
     <div class="container">
         <div class="row">
-            <h1>Jaimie Bertoli</h1>
             <div class="col-md-4">
                 <div class="section-title">
-                    <img src="images/biopic.png">
+                    <img src="images/biopic.png" alt="Jaimie Bertoli">
                 </div>
             </div>
             <div class="col-md-8">
@@ -96,33 +74,24 @@
             </div>
         </div>
     </div>
-</div>
--->
-</main>
+</section>
 
-  <div class="fixed-action-btn">
-    <a href="#message" class="modal-trigger btn btn-large btn-floating amber waves-effect waves-light">
-      <i class="large material-icons">message</i>
-    </a>
+
+<section class="skills-section" id="Skills"> 
+  <div class="container">
+      <div class="row">
+          <img src="">
+      </div>
   </div>
+</section>
 
-  <div id="message" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h4>Contact</h4>
-      <p>coming soon...</p>
-    </div>
-    <div class="modal-footer">
-      <a href="" class="modal-action modal-close waves-effect btn-flat">close</a>
-    </div> 
-  </div> 
-
-
+-->
 
 <!-- Footer-->
   <footer class="page-footer deep-purple darken-3">
     <div class="footer-copyright deep-purple darken-4">
       <div class="container">
-        <time datetime="{{ site.time | date: '%Y' }}">&copy; 20201 Jaimie Bertoli</time>
+        <time datetime="{{ site.time | date: '%Y' }}">&copy; 2021 Jaimie Bertoli</time>
       </div>
     </div>
   </footer>

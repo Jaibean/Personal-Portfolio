@@ -2,82 +2,111 @@ html {
     scroll-behavior: smooth; /* This ensures that the page scrolling is smooth when the nav bar is clicked */
   }
 
+  body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  } 
+  
+  main {
+    flex: 1 0 auto;
+  }
+  
+  h1.title,
+  .footer-copyright a {
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  /* start welcome animation */
+  
+.welcome {
+    background-image: url(../images/triangle-background.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .welcome .splash {
+    height: 0px;
+    padding: 0px;
+    border: 130em solid #039be5;
+    position: fixed;
+    left: 50%;
+    top: 100%;
+    display: block;
+    box-sizing: initial;
+    overflow: hidden;
+  
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+  }
+  
+  .welcome #welcome {
+    background: #311b92 ;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
+  }
+     
+  /* moveIn */
+  .welcome header,
+  .welcome a.btn {
+    opacity: 0;
+    animation: moveIn 2s 3.1s ease forwards;
+  }
 
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-} 
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-main {
-  flex: 1 0 auto;
+/*About section*/
+#About {
+    visibility: hidden;
 }
 
-h1.title,
-.footer-copyright a {
-  font-family: Karla, Perpetua, Rockwell Extra Bold;
-  color: #311b92;
-  text-shadow: 2px 2px 5px rgba(149, 150, 150, 1);
-  text-transform: uppercase;
-  font-weight: 900;
+.row {
+   float: left;
+}
+.about-section img{
+    filter: grayscale(50%); /* This rids our pictures of 75% of their color */
+    border-radius: 10px; /* This causes our images to have slightly rounded edges */
+    max-width: 100%; 
+    height: 340px; 
+	  margin-left: auto; /* This in combination with margin-right: auto centers our images */
+    margin-right: auto;
+	  display: none;	/* By specifying block display we can ensure our images are able to be centered */
+}
+/* Image element hover effects */
+img:hover {
+	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
+    transition: transform 1s;
+	transform: scale(1.1);
 }
 
-/* start welcome animation */
-
-body.welcome {
-background-image: url(../images/background-image.jpg);
-background-repeat: no-repeat;
-background-attachment: scroll;
-  overflow: hidden;
-  -webkit-font-smoothing: antialiased;
+.about-info p{
+    padding-top:5%;
+    font-size:18px;
 }
 
-blockquote{
-    font-weight:bold;
-}
+/*Skills Section */
 
-.welcome .splash {
-  height: 0px;
-  padding: 0px;
-  border: 130em solid #039be5;
-  position: fixed;
-  left: 50%;
-  top: 100%;
-  display: block;
-  box-sizing: initial;
-  overflow: hidden;
-
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
-}
-
-.welcome #welcome {
-  background: #311b92 ;
-  width: 56px;
-  height: 56px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  overflow: hidden;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
-}
-
-.welcome #About {
-overflow: hidden;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-}
-   
-/* moveIn */
-.welcome header,
-.welcome a.btn,
-. {
-  opacity: 0;
-  animation: moveIn 2s 3.1s ease forwards;
+.skills-section {
+  display:none;
 }
 
 @keyframes init {
