@@ -1,7 +1,15 @@
+@charset "UTF-8";
+
 html {
     scroll-behavior: smooth; /* This ensures that the page scrolling is smooth when the nav bar is clicked */
   }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
   body {
     margin: 0;
     display: flex;
@@ -15,21 +23,41 @@ html {
   
   h1.title,
   .footer-copyright a {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
+    text-align: center;
   }
   
+  .text-center {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .btn {
+    align-items: center;
+  }
   /* start welcome animation */
   
 .welcome {
-    background-image: url(../images/triangle-background.jpg);
-    overflow: hidden;
+    /*background-image: url(../images/triangle-background.jpg);*/
+    overflow: scroll;
     background-size: cover;
     background-position: center;
     -webkit-font-smoothing: antialiased;
   }
-  
+
+  .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+
   .welcome .splash {
     height: 0px;
     padding: 0px;
@@ -76,11 +104,16 @@ html {
 
 /*About section*/
 #About {
-    visibility: hidden;
+    display: none;
+    padding-top:100px;
 }
 
 .row {
    float: left;
+}
+
+.about-section {
+  background-color: #ffffff;
 }
 .about-section img{
     filter: grayscale(50%); /* This rids our pictures of 75% of their color */
@@ -88,8 +121,7 @@ html {
     max-width: 100%; 
     height: 340px; 
 	  margin-left: auto; /* This in combination with margin-right: auto centers our images */
-    margin-right: auto;
-	  display: none;	/* By specifying block display we can ensure our images are able to be centered */
+    margin-right: auto;	/* By specifying block display we can ensure our images are able to be centered */
 }
 /* Image element hover effects */
 img:hover {
@@ -106,7 +138,9 @@ img:hover {
 /*Skills Section */
 
 .skills-section {
-  display:none;
+  background-color: #311b92;
+  height: 200px;
+  display: none;
 }
 
 @keyframes init {
