@@ -8,15 +8,15 @@ window.addEventListener('scroll', function () {
 });
 
 // onclick 
-
 function scrollFunction() {
-    var x = document.getElementById("About");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    x = document.getElementById("Content").style; 
+    if (x.display === "none" || x.display == '') {
+      x.display = "block";
     } else {
-      x.style.display = "none";
+      x.display = "none";
     }
   }
+  
 
   $(document).ready(function() {
     if($(".splash").is(":visible")) {

@@ -27,7 +27,7 @@
         <link rel="manifest" href="images/site.webmanifest">
     </head>
     
-<body class="welcome Background">
+<body onload="init();" class="welcome Background">
   <span id="splash-overlay" class="splash"></span>
   <span id="welcome" class="z-depth-4"></span>
   
@@ -62,7 +62,8 @@
   </main>
 
 <!-- About section -->
-<section class="about-section Content" id="About"> 
+<section id="Content">
+<section class="about-section" id="About"> 
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -78,17 +79,33 @@
     </div>
 </section>
 
-
-<section class="skills-section Content" id="Skills"> 
+<!--skills section-->
+<section class="skills-section" id="Skills"> 
   <div class="container">
       <div class="row">
           <img src="">
       </div>
+      <div class="row">
+        <p>Continute to see highlights of projects utilizing these skills or skip ahead to my Github</p>
+      </div>
   </div>
 </section>
 
+<!--Projects secton-->
 
+<section class="project1">
+  <div class="container">
+    <div class="row">
+      <img src="" alt="">
+    </div>
+    <div class="row">
+      <h3>Playlist Generator with Python and Spotify API</h3> 
+      <p>Description of project</p>
+    </div>
+  </div>
+</section>
 
+</section>
 <!-- Footer-->
   <footer class="page-footer deep-purple darken-3">
     <div class="footer-copyright deep-purple darken-4">

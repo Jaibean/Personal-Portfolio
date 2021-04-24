@@ -57,7 +57,6 @@ html {
     z-index: -1;
   }
 
-
   .welcome .splash {
     height: 0px;
     padding: 0px;
@@ -103,9 +102,8 @@ html {
   }
 
 /*About section*/
-#About {
+#Content {
     display: none;
-    padding-top:100px;
 }
 
 .row {
@@ -114,6 +112,7 @@ html {
 
 .about-section {
   background-color: #ffffff;
+  padding-top:50px;
 }
 .about-section img{
     filter: grayscale(50%); /* This rids our pictures of 75% of their color */
@@ -122,6 +121,7 @@ html {
     height: 340px; 
 	  margin-left: auto; /* This in combination with margin-right: auto centers our images */
     margin-right: auto;	/* By specifying block display we can ensure our images are able to be centered */
+    object-fit: cover; /* maintain aspect ratio*/
 }
 /* Image element hover effects */
 img:hover {
@@ -139,8 +139,13 @@ img:hover {
 
 .skills-section {
   background-color: #311b92;
-  height: 200px;
-  display: none;
+  height: 400px;
+}
+
+.project1 {
+  background-color: #ffffff;
+  height: 400px;
+
 }
 
 @keyframes init {
