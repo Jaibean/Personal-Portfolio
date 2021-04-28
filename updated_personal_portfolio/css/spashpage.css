@@ -106,8 +106,23 @@ html {
     display: none;
 }
 
-.row {
-   float: left;
+.row:after { /* This inserts something after the content of selected elements */
+	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
+	display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
+	clear: both; /* This clears any other elements from floating on the left or the right of an element */
+}
+
+.row1 {
+	float: left;  
+	width: 45%; /* This ensures one column takes up half the page width */
+	height: 400px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
+}
+
+.row2 {
+  float: left;
+  display: block;
+	padding-top: 5%;
+	height: 400px;
 }
 
 .about-section {
@@ -146,6 +161,25 @@ img:hover {
   background-color: #ffffff;
   height: 400px;
 
+}
+
+.project1 img {
+  display: inline-block;
+  height: 400px; 
+  object-fit: cover; /* maintain aspect ratio*/
+}
+
+/* Contact form */
+input[type=text] { /* This covers the input sections of the contact form */
+	width: 100%;
+	padding: 12px;
+    border: 1px solid #ccc; /* We are setting a solid border and its colors */
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /* This specifies how an element is resized; vertical allows the user to resize the height of the element */
+    font-family: Perpetua, Rockwell Extra Bold; 
 }
 
 @keyframes init {
