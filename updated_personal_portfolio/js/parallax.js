@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
 
 // onclick unhide contents
 function scrollFunction() {
-    x = document.getElementById("Content").style; 
+    x = document.getElementById("About").style; 
     if (x.display === "none" || x.display == '') {
       x.display = "block";
     } else {
@@ -43,7 +43,7 @@ window.smoothScroll = function(target) {
 }
 
 
-
+// jQuery not in use
 
   $(document).ready(function() {
     if($(".splash").is(":visible")) {

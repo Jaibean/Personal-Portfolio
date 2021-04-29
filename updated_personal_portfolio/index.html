@@ -7,7 +7,8 @@
 		<meta charset="UTF-8">
         <title>Jaimie Bertoli</title>
         <!-- Stylesheets-->
-		    <link rel="stylesheet" type="text/css" href="css/spashpage.css">
+        <link rel="stylesheet" type="text/css" href="css/spashpage.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
         <!-- Scripts-->
@@ -27,7 +28,7 @@
         <link rel="manifest" href="images/site.webmanifest">
     </head>
     
-<body onload="init();" class="welcome Background">
+<body class="welcome Background">
   <span id="splash-overlay" class="splash"></span>
   <span id="welcome" class="z-depth-4"></span>
   
@@ -48,6 +49,7 @@
     </nav>
   </header>
 
+  <!--Slash content-->
   <main id="banner" class="valign-wrapper">
     <span class="container">
       <img src="images/triangle-background.jpg" class="parallax">
@@ -56,13 +58,24 @@
       <h1 class="title">Jaimie Bertoli's Portfolio</h1>
       <p class="flow-text">Software Developer based in NYC</p>
       <br><br>
-      <a onclick="scrollFunction()" class="btn more scrolly justify-center">Learn More</a>
+      <a onclick="smoothScroll(document.getElementById('About'))" class="btn more scrolly justify-center">Learn More</a>
     </div>
     </span>
   </main>
 
 <!-- About section -->
-<section id="Content">
+  <!--
+  <section class="about-section row" id="About">
+    <div class="row1">
+      <img src="images/biopic.png" alt="Jaimie Bertoli">
+    </div>
+    <div class="row2">
+      <p>Jaimie is self motivated developer with a strong business sense that enjoys working on a team. She enjoys learning new technologies and is able to translate business problems to data driven solutions. Recently she completed an intensive coding boot camp to expand skill sets to peruse a career as a backend developer. Python is the language that intrigues her the most, but is eager to integrate new technologies into her skill set. Currently she is building web apps with Python, Django, Flask, JavaScript, React, and RESTful APIs to upkeep her skills while searching for a new job.
+      </p>
+    </div>
+</section>
+-->
+<div id="Content container">
 <section class="about-section" id="About"> 
     <div class="container">
         <div class="row">
@@ -71,7 +84,7 @@
             </div>
             <div class="col-md-8">
                 <div class="about-info">
-                    <p>Jaimie is self motivated developer with a strong business sense that enjoys working on a team. She enjoys learning new technologies and is able to translate business problems to data driven solutions. Recently she completed an intensive coding boot camp to expand skill sets to peruse a career as a backend developer. Python is the language that intrigues her the most, but is eager to integrate new technologies into her skill set. Currently she is building web apps with Python, Django, Flask, JavaScript, React, and RESTful APIs to upkeep her skills while searching for a new job.
+                    <p>Jaimie is a self motivated developer with a strong business sense that enjoys working on a team. She enjoys learning new technologies and is able to translate business problems to data driven solutions. Recently she completed an intensive coding boot camp to expand skill sets to peruse a career as a backend developer. Python is the language that intrigues her the most, but is eager to integrate new technologies into her skill set. Currently she is building web apps with Python, Django, Flask, JavaScript, React, and RESTful APIs to upkeep her skills while searching for a new job.
                     </p>
                 </div>
             </div>
@@ -104,54 +117,8 @@
     </div>
 </section>
 
-<section class="project2">
-  <div class="container">
-    <div class="row">
-      <img src="" alt="">
-    </div>
-    <div class="row">
-      <h3>Django Checkbook</h3> 
-      <p>Description of project</p>
-    </div>
-  </div>
-</section>
+</div>
 
-<section class="project3">
-  <div class="container">
-    <div class="row">
-      <img src="" alt="">
-    </div>
-    <div class="row">
-      <h3>Tkinter Phonebook</h3> 
-      <p>Description of project</p>
-    </div>
-  </div>
-</section>
-
-<section class="project4">
-  <div class="container">
-    <div class="row">
-      <img src="" alt="">
-    </div>
-    <div class="row">
-      <h3>JavaScript Tic Tac Toe</h3> 
-      <p>Description of project</p>
-    </div>
-  </div>
-</section>
-
-<section class="project4">
-  <div class="container">
-    <div class="row">
-      <img src="" alt="">
-    </div>
-    <div class="row">
-      <h3>JavaScript Calculator</h3> 
-      <p>Description of project</p>
-    </div>
-  </div>
-</section>
-</section>
 <!-- Footer-->
   <footer class="page-footer deep-purple darken-3">
     <div class="footer-copyright deep-purple darken-4">
@@ -160,8 +127,5 @@
       </div>
     </div>
   </footer>
-
-
-
 </body>
 </html>

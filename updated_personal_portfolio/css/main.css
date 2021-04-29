@@ -1,0 +1,83 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+/*About section
+#Content {
+    display: none;
+}
+*/
+
+.row:after { /* This inserts something after the content of selected elements */
+	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
+	display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
+	clear: both; /* This clears any other elements from floating on the left or the right of an element */
+}
+
+.row1 {
+	float: left;  
+	width: 45%; /* This ensures one column takes up half the page width */
+	height: 400px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
+}
+
+.row2 {
+  float: left;
+  display: block;
+	padding-top: 5%;
+    height: 400px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.about-section {
+    width: 100%;
+    height: 1000px;
+  background-color: #ffffff;
+  padding-top:50px;
+}
+.about-section img{
+    filter: grayscale(50%); /* This rids our pictures of 75% of their color */
+    border-radius: 10px; /* This causes our images to have slightly rounded edges */
+    max-width: 100%; 
+    height: 340px; 
+	  margin-left: auto; /* This in combination with margin-right: auto centers our images */
+    margin-right: auto;	/* By specifying block display we can ensure our images are able to be centered */
+    object-fit: cover; /* maintain aspect ratio*/
+}
+/* Image element hover effects */
+img:hover {
+	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
+    transition: transform 1s;
+	transform: scale(1.1);
+}
+
+.about-info p{
+    padding-top:5%;
+    font-size:18px;
+}
+
+/*Skills Section */
+
+.skills-section {
+  background-color: #311b92;
+  height: 400px;
+}
+
+/* projects section */
+
+.project1 {
+  background-color: #ffffff;
+  height: 400px;
+
+}
+
+.project1 img {
+  display: inline-block;
+  height: 400px; 
+  object-fit: cover; /* maintain aspect ratio*/
+}
+
