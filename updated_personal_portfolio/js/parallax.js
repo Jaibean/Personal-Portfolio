@@ -9,7 +9,7 @@ window.addEventListener('scroll', function () {
 
 // onclick unhide contents
 function scrollFunction() {
-    x = document.getElementById("About").style; 
+    x = document.getElementById("Content").style; 
     if (x.display === "none" || x.display == '') {
       x.display = "block";
     } else {

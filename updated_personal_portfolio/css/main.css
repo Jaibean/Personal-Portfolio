@@ -6,12 +6,6 @@ main {
     width: 100%;
   }
 
-/*About section
-#Content {
-    display: none;
-}
-*/
-
 .row:after { /* This inserts something after the content of selected elements */
 	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
 	display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
@@ -19,7 +13,9 @@ main {
 }
 
 .row1 {
-	float: left;  
+  float: left; 
+  display: block; 
+  justify-content: center;
 	width: 45%; /* This ensures one column takes up half the page width */
 	height: 400px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
 }
@@ -27,19 +23,19 @@ main {
 .row2 {
   float: left;
   display: block;
-	padding-top: 5%;
+  justify-content: center;
     height: 400px;
     white-space: pre-wrap;
     word-break: break-word;
 }
 
 .about-section {
-    width: 100%;
-    height: 1000px;
   background-color: #ffffff;
   padding-top:50px;
+  z-index: -2;
 }
 .about-section img{
+    display:block;
     filter: grayscale(50%); /* This rids our pictures of 75% of their color */
     border-radius: 10px; /* This causes our images to have slightly rounded edges */
     max-width: 100%; 
@@ -49,7 +45,7 @@ main {
     object-fit: cover; /* maintain aspect ratio*/
 }
 /* Image element hover effects */
-img:hover {
+.about-section img:hover {
 	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
     transition: transform 1s;
 	transform: scale(1.1);
@@ -63,7 +59,7 @@ img:hover {
 /*Skills Section */
 
 .skills-section {
-  background-color: #311b92;
+  background-color: #41354D;
   height: 400px;
 }
 
@@ -77,7 +73,12 @@ img:hover {
 
 .project1 img {
   display: inline-block;
+  display:block;
+  margin: 0;
   height: 400px; 
   object-fit: cover; /* maintain aspect ratio*/
 }
 
+.page-footer {
+  background-color: #41354D;
+}
